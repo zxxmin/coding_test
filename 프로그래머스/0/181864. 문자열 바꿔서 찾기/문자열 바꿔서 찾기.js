@@ -1,7 +1,7 @@
 function solution(myString, pat) {
-    let answer=[];
+    let answer = [];
     myString.split('').forEach((el) => {
-        el === 'A' ? el = 'B' :el = 'A'
+        el = el === 'A' ? 'B' : 'A'
 
         answer = answer.concat(el);
         
