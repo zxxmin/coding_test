@@ -2,9 +2,8 @@ const solution = (s) => {
     const eng = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
     eng.forEach((item, idx) => {
-        for(let i=0; i < s.length; i++) {
-            if(s.indexOf(item) !== -1) s = s.replace(item, idx);
-        }
-    })
-    return Number(s)
+		s = s.replace(new RegExp(item, 'g'), idx);
+	});
+	
+	return Number(s); 
 }
