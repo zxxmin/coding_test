@@ -27,8 +27,7 @@ const solution = (survey, choice) => {
     })
 
 
-    let answer = '';
-    answer += newsurvey.R >= newsurvey.T ? "R" : "T";
+    let answer = newsurvey.R >= newsurvey.T ? "R" : "T";
     answer += newsurvey.C >= newsurvey.F ? "C" : "F";
     answer += newsurvey.J >= newsurvey.M ? "J" : "M";
     answer += newsurvey.A >= newsurvey.N ? "A" : "N";
