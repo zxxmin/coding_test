@@ -1,4 +1,4 @@
-function solution(s) {
+const solution = (s) => {
     let zero = 0;
     let loop = 0;
 
