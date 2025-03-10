@@ -1,10 +1,10 @@
-let fs = require('fs');
-let input = fs.readFileSync(0, 'utf8').toString().trim().split(' ');
-let a = Number(input[0]);
-let b = Number(input[1]);
+const fs = require("fs");
+const input: string[] = fs.readFileSync("/dev/stdin", "utf8").trim().split(" ");
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(Math.floor(a / b));
-console.log(a % b);
+const [a, b] = input.map(Number);
+
+console.log(`${a+b}
+${a-b}
+${a*b}
+${Math.floor(a/b)}
+${a%b}`);
